@@ -1,0 +1,90 @@
+function [X, Y] = Print (MMPickupNodes, MMDeliveryNodes, EndDepots3)
+
+
+
+%Alle mulige stoppesteder = [Depot, Depot, Trondheim, Olso, Hamar, Oppdal, R?ros, Gj?vik,
+%Domb?s, Lillehammer, Ringebu, Stj?rdal] 
+
+for i = 1 : length(MMPickupNodes)
+    p = MMPickupNodes(i);
+    d = MMDeliveryNodes (i); 
+switch p
+    case 1
+        name = ' Trondheim';
+    case 2
+        name = 'Oslo';
+    case 3
+        name = ' Hamar';
+    case 4
+        name = 'Oppdal';
+    case 5
+        name = ' Røros';
+    case 6
+        name = 'Gjøvik';
+    case 7
+        name = ' Dombås';
+    case 8
+        name = 'Lillehammer';
+    case 9
+        name = ' Ringebu';
+    case 10
+        name = 'Stjørdal';
+end
+switch d
+    case 1
+        name2 = ' Trondheim';
+    case 2
+        name2 = 'Oslo';
+    case 3
+        name2 = ' Hamar';
+    case 4
+        name2 = 'Oppdal';
+    case 5
+        name2 = ' Røros';
+    case 6
+        name2 = 'Gjøvik';
+    case 7
+        name2 = ' Dombås';
+    case 8
+        name2 = 'Lillehammer';
+    case 9
+        name2 = ' Ringebu';
+    case 10
+        name2 = 'Stjørdal';
+end
+X(i) = ['!Freight order ' , num2str(i), '  has pickup in ' ,name, ' and delivery in ',name2];
+disp(X(i));
+
+end 
+
+for j = 1: 3
+    s = EndDepots3(j);
+   switch s
+    case 1
+        name3 = ' Trondheim';
+    case 2
+        name3 = 'Oslo';
+    case 3
+        name3 = ' Hamar';
+    case 4
+        name3 = 'Oppdal';
+    case 5
+        name3 = ' Røros';
+    case 6
+        name3 = 'Gjøvik';
+    case 7
+        name3 = ' Dombås';
+    case 8
+        name3 = 'Lillehammer';
+    case 9
+        name3 = ' Ringebu';
+    case 10
+        name3 = 'Stjørdal';
+   end 
+Y(j) = ['!Vehicle ', num2str(j), ' has startdepot ' , name3];
+disp(Y(j));
+
+   
+end 
+
+

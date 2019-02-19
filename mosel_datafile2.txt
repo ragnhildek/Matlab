@@ -1,0 +1,122 @@
+!Freight order 1  has pickup in  Røros and delivery in  Dombås
+!Freight order 2  has pickup in Lillehammer and delivery in Oslo
+!Freight order 3  has pickup in Lillehammer and delivery in  Trondheim
+!Freight order 4  has pickup in Stjørdal and delivery in Lillehammer
+!Freight order 5  has pickup in  Ringebu and delivery in Gjøvik
+!Freight order 6  has pickup in Oppdal and delivery in  Røros
+!Vehicle 1 has startdepot Lillehammer
+!Vehicle 2 has startdepot Oslo
+!Vehicle 3 has startdepot  Dombås
+ 
+
+PickupNodes : [2   4   6   8  10  12]
+DeliveryNodes : [3   5   7   9  11  13]
+NodesVehiclek : [0   1   2   3   4   5   6   7   8   9  10  11  12  13]
+NodesWithoutStartDepot : [1   2   3   4   5   6   7   8   9  10  11  12  13]
+NodesWithoutEndDepot : [0   2   3   4   5   6   7   8   9  10  11  12  13]
+Nodes : [2   3   4   5   6   7   8   9  10  11  12  13]
+PositionsVehiclek : [1   2   3   4   5   6   7   8   9  10  11  12  13  14]
+nPositionsVehiclek : [14]
+VolumeCap : [81]
+WeightCap : [30]
+VolumeWeightConstant : [3.5]
+Vehicles : [ 1 ] 
+EarlyTimeWindow : [0            0            1         27.5            1         27.5           13        41.75            2        31.25           20        45.25           20           46]
+LateTimeWindow : [144           144            25          51.5            25          51.5            37         65.75            26         55.25            44         69.25            44            70]
+
+WeightLoad: [ 
+
+3     0     0     0     0     0     
+0     4     0     0     0     0     
+0     0     14     0     0     0     
+0     0     0     1     0     0     
+0     0     0     0     8     0     
+0     0     0     0     0     3     
+  ] 
+
+VolumeLoad: [ 
+
+18     0     0     0     0     0     
+0     14     0     0     0     0     
+0     0     35     0     0     0     
+0     0     0     2     0     0     
+0     0     0     0     11     0     
+0     0     0     0     0     12     
+  ] 
+
+DrivingTime: [ 
+
+0     0     0     0     0     0     0     0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     0     0     0     0     0     0     0     
+0     0     0     2.5     3.75     4.75     3.75     2.25     2.5     3.75     3     4.25     2     0     
+0     0     2.5     0     2     4.25     2     2.75     3.25     2     1.25     2.5     1     2.5     
+0     0     3.75     2     0     2.5     0     4.75     5.25     0     0.75     0.75     3     3.75     
+0     0     4.75     4.15     2.5     0     2.5     6.5     6.75     2.5     3     1.75     5.25     4.75     
+0     0     3.75     2     0     2.5     0     4.75     5.25     0     0.75     0.75     3     3.75     
+0     0     2.25     2.75     4.75     6.5     4.75     0     0.5     4.75     4     5.25     1.75     2.25     
+0     0     2.5     3.25     5.25     6.75     5.25     0.5     0     5.25     4.5     5.75     2.25     2.5     
+0     0     3.75     2     0     2.5     0     4.75     5.25     0     0.75     0.75     3     3.75     
+0     0     3     1.25     0.75     3     0.75     4     4.5     0.75     0     1.25     2.25     3     
+0     0     4.25     2.5     0.75     1.75     0.75     5.25     5.75     0.75     1.25     0     3.5     4.25     
+0     0     2     1     3     5.25     3     1.75     2.25     3     2.25     3.5     0     2     
+0     0     0     2.5     3.75     4.75     3.75     2.25     2.5     3.75     3     4.25     2     0     
+  ] 
+
+DrivingDistance: [ 
+
+0     0     0     0     0     0     0     0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     0     0     0     0     0     0     0     
+0     0     0     178     264     382     264     154     168     264     208     306     153     0     
+0     0     178     0     154     319     154     198     228     154     98     196     79     178     
+0     0     264     154     0     168     0     336     367     0     57     45     218     264     
+0     0     382     319     168     0     168     495     524     168     221     123     414     382     
+0     0     264     154     0     168     0     336     367     0     57     45     218     264     
+0     0     154     198     336     495     336     0     36     336     280     378     119     154     
+0     0     168     228     367     524     367     36     0     367     311     409     149     168     
+0     0     264     154     0     168     0     336     367     0     57     45     218     264     
+0     0     208     98     57     221     57     280     311     57     0     98     162     208     
+0     0     306     196     45     123     45     378     409     45     98     0     260     306     
+0     0     153     79     218     414     218     119     149     218     162     260     0     153     
+0     0     0     178     264     382     264     154     168     264     208     306     153     0     
+  ] 
+
+StartDepotTime : [  
+3.75     
+0     
+0     
+5.25     
+0.75     
+3     
+  ] 
+
+StartDepotDistance : [  
+264     
+0     
+0     
+367     
+57     
+218     
+  ] 
+
+MaxConsecutiveDrivingHours: [4.5] 
+ IntermediateBreakTime: [0.75] 
+MaxConsecutiveWorkingHours : [6] 
+MaxDailyDrivingHours : [9] 
+MinDailyRestingHours : [11] 
+HoursInDay: [24] 
+ MaxWeeklyDrivingHours : [56] 
+DrivingBigM1 : [79] 
+DrivingBigM2 : [11] 
+MaxWaitingTime : [0] 
+MaxBreakDuration: [11] 
+TimeBigM : [79] 
+
+
+FuelPrice : [14.84] 
+FuelConsumptionEmptyTruckPerKm : [0.42] 
+ FuelConsumptionPerTonPerKm : [0.01] 
+ LabourCostPerHour : [469] 
+OtherDistanceDependentCostsPerKm : [3.55] 
+OtherTimeDependentCostsPerHour : [199] 
+TimeTonService : [0.1] 
+Revenue : [100] 
