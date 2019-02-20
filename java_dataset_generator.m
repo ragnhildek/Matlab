@@ -2,7 +2,7 @@ function [] = java_dataset_generator(Requests, EarlyTimeWindow, LateTimeWindow, 
 %Complete print for the java dataset. 
 %First run V4paramtere to find inputdata to V5, then this to get java dataset. 
 
-fid = fopen ('15R1V.txt', 'wt');
+fid = fopen ('20R1V.txt', 'wt');
 
 Times = [               0       6.5     5.25    1.75    2.25    5.25    2.75    4.75    4       0.5     0
                         6.5     0       1.75    5.25    4.75    1.75    4.15    2.5     3       6.75    0
